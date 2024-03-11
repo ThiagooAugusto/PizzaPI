@@ -3,4 +3,35 @@
 GET {{PizzaPi_HostAddress}}/weatherforecast/
 Accept: application/json
 
+
+
 ###
+GET {{PizzaPi_HostAddress}}/pizza/
+Accept: application/json
+###
+
+GET {{PizzaPi_HostAddress}}/pizza/2
+Accept: application/json
+###
+GET {{PizzaPi_HostAddress}}/pizza/5
+Accept: application/json
+###
+
+POST {{PizzaPi_HostAddress}}/pizza/
+Content-Type:application/json
+
+{
+    "name":"Pineapple",
+    "isGlutenFree":true
+}
+
+###
+
+PUT {{PizzaPi_HostAddress}}/pizza/3
+Content-Type:application/json
+
+{
+    "id":3,
+    "name":"Hawaii",
+    "isGlutenFree":false
+}
